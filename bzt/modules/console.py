@@ -723,7 +723,7 @@ class PercentilesList(ListBox):
         for key in sorted(overall.get(KPISet.PERCENTILES).keys(), key=float):
             dat = (float(key), overall[KPISet.PERCENTILES][key])
             self.body.append(
-                Text(("stat-txt", "%.1f%%: %.3f" % dat), align=RIGHT))
+                Text(("stat-txt", "%s%%: %.3f" % dat), align=RIGHT))
 
 
 class AvgTimesList(ListBox):
